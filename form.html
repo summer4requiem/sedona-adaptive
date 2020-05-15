@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма отзыва</title>
+    <link rel="stylesheet" href="source/less/style.less">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__logo" href="">logo
+            <img class="header__logo-img" src="" alt="Логотип компании">
+        </a>
+        <nav>
+            <a href="index.html">главная</a>
+            <a href="galary.html">фото и видео</a>
+            <a href="#">форма отзыва</a>
+            <a href="">html academy</a>
+        </nav>
+    </header>
+    <section class="welcome">
+        <div>
+            <img src="https://via.placeholder.com/1200x530">
+            <p class="welcome__description">Оставьте свой отзыв</p>
+            <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+            </p>
+        </div>
+    </section>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+        <div>
+            <p>Ваше Общее впечатление:</p>
+            <label for="radio">Скорее положительное</label>
+            <input type="radio" id="radio">
+            <label for="radio">Скорее отрицательное</label>
+            <input type="radio" id="radio">
+            <label for="radio">Затрудняюсь ответить</label>
+            <input type="radio" id="radio">
+        </div>
+        <div>
+            <p>Представьтесь:</p>
+            <label for="text">Имя</label>
+            <input type="text" id="text">
+            <label for="text">Фамилия</label>
+            <input type="text" id="text">
+            <label for="text">Отчество</label>
+            <input type="text" id="text">
+        </div>
+        <section class="contacts">
+            <div class="contacts__number">
+                <label class="contacts__number--phone" for="phone">Телефон</label>
+                <input type="number" id="phone" placeholder="телефон">
+            </div>
+            <div class="contacts__mail">
+                <label class="contacts__number--phone" for="mail">Электронная почта*:</label>
+                <input type="number" placeholder="Введите e-mail" id="mail">
+            </div>
+        </section>
+        <section class="landmarks">
+            <p>посещенные достопримечательности:</p>
+
+            <label for="">Мост Дьявола</label>
+            <input type="checkbox">
+            <label for="">Гора-Колокол</label>
+            <input type="checkbox">
+
+            <label for="">Слайт парк</label>
+            <input type="checkbox">
+            <label for="">Красные скалы</label>
+            <input type="checkbox">
+        </section>
+        <section class="feedback">
+            <p>Опишите свои эмоции</p>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги">
+            </textarea>
+            <button type="submit">Отправить отзыв</button>
+            <div>* — обязательные поля</div>
+        </section>
+    </form>
+    <footer>
+        <div>
+            <a href="">#visitsedona</a>
+        </div>
+        <p>
+            <a href="">Твиттер</a>
+            <a href="">Фейсбук</a>
+            <a href="">Инстаграм</a>
+        </p>
+        <p>
+            <a href="">Разработано</a>
+        </p>
+    </footer>
+</body>
+</html>
