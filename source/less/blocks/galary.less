@@ -1,8 +1,26 @@
 .galary {
     padding: 0 20px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
-.welcome-galary__img {
+.galary__sub-list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.galary__item-info {
+    margin: 0;
+}
+
+.galary__images {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.galary__img {
     min-height: 161px;
 }
 
@@ -10,14 +28,13 @@
     display: none;
     padding: 30px;
 }
+
 .galary__item {
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .galary__item-description {
-    font-size: 14px;
     font-weight: bold;
-    line-height: 24px;
 }
 
 .galary__item-author {
@@ -26,4 +43,66 @@
 
 .galary__item-likes {
     text-transform: none;
+}
+
+.video__player--inner {
+    min-height: 65px;
+    background-color: #f2f2f2;
+    width: 280px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .galary {
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .galary__img {
+        min-height: 282px;
+    }
+
+    .galary__img-about {
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+    }
+
+    .galary__sub-list .galary__item {
+        width: 50%;
+    }
+
+    .galary__sub-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .galary__sub-list .galary__item:nth-child(2) .galary__img-about {
+        background-color: #eaeaea;
+    }
+
+    .galary__item__big-road {
+        height: 400px;
+    }
+
+    .galary__title {
+        font-size: 30px;
+    }
+
+    .galary__promo {
+        width: 444px;
+        margin: 0 auto;
+        margin-bottom: 73px;
+    }
+
+    .galary__inner {
+        padding: 0 60px;
+    }
+
+    .galary__sub-list__img {
+        height: 268px;
+        width: 324px;
+    }
 }

@@ -6,37 +6,68 @@
     padding: 0 20px;
 }
 
+.review__img {
+    min-height: 158px;
+    margin-bottom: 40px;
+}
+
 .review__about {
     font-size: 14px;
     line-height: 24px;
     text-align: center;
+    color: #333333;
 }
 
-.form__introduction p {
-    font-weight: bold;
+
+.text {
+    margin-right: 14px;
 }
 
-.form label {
-    text-transform: initial;
-}
-
-.form__cell {
-    margin-bottom: 20px;
-    font-size: 14px;
-}
 
 .form__review--checkbox {
     font-size: 18px;
+    min-height: 60px;
+    margin-bottom: 13px;
 }
 
-.contacts__input {
-    width: 100%;
+.radio__label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.radio__label::before {
+    content: "";
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+}
+
+.radio__control:checked + .radio__label::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: 17px;
+    left: 21px;
+    background-color: #333333;
 }
 
 .gray--input {
     padding: 20px;
     border-style: none;
+    width: 100%;
     background-color: #f2f2f2;
+}
+
+.gray--input::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000;
 }
 
 .feedback__input {

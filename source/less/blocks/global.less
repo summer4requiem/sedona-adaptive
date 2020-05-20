@@ -13,6 +13,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 1px solid lightgreen;
 }
 
 .common--title {
@@ -33,10 +34,32 @@ img {
 }
 
 .common--mountain-background {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat bottom center/cover;
   width: auto;
   min-height: 400px;
-  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .common--mountain-background {
+    position: relative;
+  }
+
+  .common--title {
+    font-size: 30px;
+  }
+
+  .common--mountain-background::before {
+    display: block;
+    position: absolute;
+    min-height: 20px;
+    background-image: url("../img/bg-triangle.svg");
+    background-color: red;
+    content: "";
+  }
+}
+
+.show-content {
+  display: block;
 }
 
 .visually-hidden {

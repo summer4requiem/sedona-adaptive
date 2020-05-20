@@ -43,11 +43,10 @@ gulp.task("images", function () {
     .pipe(gulp.dest("source/img"));
 });
 
-
 gulp.task("js", function () {
   return pipeline(
     gulp.src("source/js/**/*.js"),
-    uglify(),
+    // uglify(),
     gulp.dest("build/js"));
 });
 
