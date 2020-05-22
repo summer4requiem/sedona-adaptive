@@ -1,6 +1,7 @@
 .welcome {
     line-height: 26px;
 }
+
 .welcome__details {
     position: relative;
     font-size: 14px;
@@ -27,9 +28,6 @@
     background-position: center;
     position: relative;
     z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 45px;
 }
 
@@ -55,6 +53,11 @@
     .welcome__title {
         font-size: 21px;
     }
+
+    .welcome__img::before {
+        bottom: -1px;
+    }
+
 
     .welcome__text-img {
         width: 460px;

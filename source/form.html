@@ -58,7 +58,7 @@
                     <a class="navigation__link" href="galary.html">фото и видео</a>
                 </div>
             </div>
-            <div  class="navigation--wrapper">
+            <div class="navigation--wrapper">
                 <div class="navigation__item">
                     <a class="navigation__link" href="form.html">форма отзыва</a>
                 </div>
@@ -70,99 +70,133 @@
     </header>
     <section class="review">
         <div>
-            <div class="review__img common--mountain-background"></div>
-            <div class="review__wrapper">
-                <p class="welcome__title common--title">Оставьте свой отзыв</p>
-                <p class="review__about common--about-info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
-                    также о посещенных
-                    вами
-                    достопримечательностях
-                </p>
+            <div class="review__img common--mountain-background">
+                <img class="galary__img--text img--text" src="./img/text-sedona.svg" alt="">
             </div>
         </div>
     </section>
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="form__review">
-            <p class="form__title common--title">Ваше Общее впечатление:</p>
-            <div class="form__review--checkbox">
-                <label class="radio__label" for="good">Скорее положительное</label>
-                <input class="visually-hidden radio__control" type="radio" id="good" name="toggle" checked>
+        <div class="review__wrapper">
+            <p class="review__title common--title">Оставьте свой отзыв</p>
+            <p class="review__about common--about-info">Помогите нашим отелям стать лучше! оставьте отзыв о них, а
+                также о посещенных
+                вами
+                достопримечательностях
+            </p>
+
+            <div class="form__introduction--inner">
+                <section class="form__review">
+                    <p class="form__title common--title">Ваше Общее впечатление:</p>
+                    <div class="form__review--checkbox">
+                        <input class="visually-hidden radio__control" type="radio" id="good" name="toggle" checked>
+                        <label class="radio__label" for="good">Скорее положительное</label>
+                    </div>
+                    <div class="form__review--checkbox">
+                        <input class="visually-hidden radio__control" type="radio" id="bad" name="toggle">
+                        <label class="radio__label" for="bad">Скорее отрицательное</label>
+                    </div>
+                    <div class="form__review--checkbox">
+                        <input class="visually-hidden radio__control" type="radio" id="hard" name="toggle">
+                        <label class="radio__label" for="hard">Затрудняюсь ответить</label>
+                    </div>
+                </section>
+                <section class="introduction">
+                    <p class="introduction__title common--title">Представьтесь:</p>
+                    <div class="introduction__field">
+                        <label class="introduction__name" for="text">Имя</label>
+                        <input class="form__input gray--input" type="text" id="text" placeholder="Петр">
+                    </div>
+                    <div class="introduction__field">
+                        <label class="introduction__name" for="text">Фамилия</label>
+                        <input class="form__input gray--input" type="text" id="text" placeholder="Иванов">
+                    </div>
+                    <div class="introduction__field">
+                        <input class="form__input gray--input" type="text" id="text" placeholder="Александрович">
+                        <label class="introduction__name" for="text">Отчество</label>
+                    </div>
+                </section>
             </div>
-            <div class="form__review--checkbox">
-                <label class="radio__label" for="bad">Скорее отрицательное</label>
-                <input class="visually-hidden radio__control" type="radio" id="bad" name="bad-opinion">
-            </div>
-            <div class="form__review--checkbox">
-                <label class="radio__label" for="hard">Затрудняюсь ответить</label>
-                <input class="visually-hidden radio__control" type="radio" id="hard" name="hard-to-tell">
-            </div>
-        </div>
-        <section class="introduction">
-            <p class="introduction__title common--title">Представьтесь:</p>
-            <div class="introduction__field">
-                <label class="introduction__name" for="text">Имя</label>
-                <input class="form__input gray--input" type="text" id="text" placeholder="Петр">
-            </div>
-            <div class="introduction__field">
-                <label class="introduction__name" for="text">Фамилия</label>
-                <input class="form__input gray--input" type="text" id="text" placeholder="Иванов">
-            </div>
-            <div class="introduction__field">
-                <label class="introduction__name" for="text">Отчество</label>
-                <input class="form__input gray--input" type="text" id="text" placeholder="Александрович">
-            </div>
-        </section>
-        <section class="contacts">
-            <h3 class="contacts__title common--title">Контактная информация:</h3>
-            <div class="contacts__cell">
-                <label class="contacts__info" for="phone">Контактный телефон*:</label>
-                <input class="contacts__input gray--input" type="number" id="phone" placeholder="Телефон">
-            </div>
-            <div class="contacts__cell">
-                <label class="contacts__info" for="mail">Электронная почта*:</label>
-                <input class="contacts__input gray--input" type="number" placeholder="Введите e-mail" id="mail">
-            </div>
-        </section>
-        <section class="landmarks">
-            <p class="landmarks__title common--title">посещенные достопримечательности:</p>
-            <div class="landmarks__cell">
-                <label class="landmarks__label" for="">Мост Дьявола</label>
-                <input class="visually-hidden landmarks__checkbox" type="checkbox">
-            </div>
-            <div class="landmarks__cell">
-                <label class="landmarks__label" for="">Гора-Колокол</label>
-                <input class="visually-hidden landmarks__checkbox" type="checkbox">
-            </div>
-            <div class="landmarks__cell">
-                <label class="landmarks__label" for="">Слайт парк</label>
-                <input class="visually-hidden landmarks__checkbox" type="checkbox">
-            </div>
-            <div class="landmarks__cell">
-                <label class="landmarks__label" for="">Красные скалы</label>
-                <input class="visually-hidden landmarks__checkbox" type="checkbox">
-            </div>
-        </section>
-        <section class="feedback">
-            <p class="feedback__title common--title">Опишите свои эмоции</p>
-            <textarea class="feedback__input gray--input" id="" cols="30" rows="10"
-                placeholder="Опишите подробно все свои восторги">
+            <section class="contacts">
+                <h3 class="contacts__title common--title">Контактная информация:</h3>
+                <div class="contacts__cell">
+                    <input class="contacts__input gray--input" type="tel" id="phone" placeholder="Телефон">
+                    <label class="contacts__info" for="phone">Контактный телефон*:</label>
+                </div>
+                <div class="contacts__cell">
+                    <input class="contacts__input gray--input" type="email" placeholder="Введите e-mail" id="mail">
+                    <label class="contacts__info" for="mail">Электронная почта*:</label>
+                </div>
+            </section>
+            <section class="landmarks">
+                <p class="landmarks__title common--title">посещенные достопримечательности:</p>
+                <div class="landmarks__cell">
+                    <input id="devil-bridge" class="visually-hidden landmarks__checkbox" type="checkbox" name="bridge">
+                    <label class="landmarks__label" for="devil-bridge">Мост Дьявола</label>
+                </div>
+                <div class="landmarks__cell">
+                    <input id="mountain-bell" class="visually-hidden landmarks__checkbox" type="checkbox"
+                        name="mountain" value="mountain-bell">
+                    <label class="landmarks__label" for="mountain-bell">Гора-Колокол</label>
+                </div>
+                <div class="landmarks__cell">
+                    <input id="slide-park" class="visually-hidden landmarks__checkbox" type="checkbox" name="park"
+                        value="slide-park">
+                    <label class="landmarks__label" for="slide-park">Слайд-парк</label>
+                </div>
+                <div class="landmarks__cell">
+                    <input id="red-rock" class="visually-hidden landmarks__checkbox" type="checkbox">
+                    <label class="landmarks__label" for="red-rock">Красные скалы</label>
+                </div>
+            </section>
+            <section class="feedback">
+                <p class="feedback__title common--title">Опишите свои эмоции</p>
+                <textarea class="feedback__input gray--input" id="" cols="30" rows="10"
+                    placeholder="Опишите подробно все свои восторги">
             </textarea>
-            <button class="form__btn main-style-btn" type="submit">Отправить отзыв</button>
-            <div>* — обязательные поля</div>
-        </section>
+                <button class="form__btn main-style-btn" type="submit">Отправить отзыв</button>
+                <div>* — обязательные поля</div>
+            </section>
+        </div>
     </form>
     <footer class="footer">
-        <div class="footer__main-link">
-            <a href="">#visitsedona</a>
+        <div class="footer__inner">
+            <div class="footer__main-link">
+                <a href="">#visitsedona</a>
+            </div>
+            <ul class="footer__social">
+                <li class="footer__social--item">
+                    <a href="">
+                        <svg class="footer__social--img" version="1.0" xmlns="http://www.w3.org/2000/svg" width="17.5"
+                            height="14.663">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z" />
+                            </svg>
+                    </a>
+                </li>
+                <li class="footer__social--item">
+                    <a href=""><svg class="footer__social--img" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="8.672" height="18.944">
+                            <path
+                                d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z" />
+                            </svg></a>
+                </li>
+                <li class="footer__social--item">
+                    <a href=""><svg class="footer__social--img" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                            width="19.979" height="14.015">
+                            <path
+                                d="M17.145 0H2.835A2.842 2.842 0 000 2.835v8.345a2.842 2.842 0 002.835 2.835h14.31a2.842 2.842 0 002.835-2.835V2.835A2.844 2.844 0 0017.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z" />
+                            </svg></a>
+                </li>
+            </ul>
+            <p class="footer__developed">
+                <a href="">Разработано
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
+                        <path
+                            d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+                        </svg>
+                </a>
+            </p>
         </div>
-        <p class="footer__social">
-            <a href="">Т</a>
-            <a href="">Ф</a>
-            <a href="">Ю</a>
-        </p>
-        <p class="footer__developed">
-            <a href="">Разработано</a>
-        </p>
     </footer>
     <script src="./js/menu-burger.js"></script>
 </body>

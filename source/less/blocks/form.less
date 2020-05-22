@@ -1,7 +1,3 @@
-.form {
-    padding: 0 20px;
-}
-
 .review__wrapper {
     padding: 0 20px;
 }
@@ -34,10 +30,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
 }
 
 .radio__label::before {
+    position: relative;
     content: "";
     width: 57px;
     height: 57px;
@@ -45,15 +41,14 @@
     background-color: #f2f2f2;
 }
 
-.radio__control:checked + .radio__label::after {
+.radio__control:checked+.radio__label::after {
+    position: absolute;
     content: "";
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    position: absolute;
-    top: 17px;
-    left: 21px;
     background-color: #333333;
+    left: 40px;
 }
 
 .gray--input {
@@ -77,4 +72,13 @@
 
 .feedback {
     margin-bottom: 74px;
+}
+
+@media (min-width: 768px) {
+    .review__img {
+        min-height: 282px;
+    }
+    .review__wrapper {
+        padding: 0 60px;
+    }
 }

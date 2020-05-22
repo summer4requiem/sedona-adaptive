@@ -100,8 +100,14 @@
 
     .header__menu-btn {
         display: none;
-
     }
+
+    .header__menu-btn &::before,
+    &::after {
+        display: none;
+    }
+
+    
 
     .navigation__link {
         width: auto;
@@ -110,10 +116,6 @@
         font-size: 14px;
     }
 
-    &::before,
-    &::after {
-        display: none;
-    }
 
     .navigation__item {
         box-shadow: none;
