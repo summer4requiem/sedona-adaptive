@@ -4,17 +4,52 @@ body {
   padding: 0;
   text-transform: uppercase;
   box-sizing: border-box;
+  background-color: #f2f2f2
+}
+
+.shadow-wrapper {
+  box-shadow: 0 5px 15px rgba(0, 1, 1, .2);
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 html {
   box-sizing: border-box;
 }
 
+
+.common--mountain-background {
+  position: relative;
+  // z-index: -1;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat bottom center/cover;
+  width: auto;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-resolution: 1.5dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat bottom center/cover;
+  }
+}
+
+.common--mountain-background::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  min-height: 29px;
+  bottom: -3px;
+  background: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 1px solid lightgreen;
+  outline: 1px solid lightgreen;
 }
 
 .common--title {
@@ -22,6 +57,12 @@ html {
   text-align: center;
   line-height: 26px;
   font-size: 18px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.show-content {
+  display: block;
 }
 
 img {
@@ -34,37 +75,25 @@ img {
   text-align: center;
 }
 
-.common--mountain-background {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat bottom center/cover;
-  width: auto;
-  min-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 768px) {
-  .common--mountain-background {
-    position: relative;
-  }
-
   .common--title {
     font-size: 21px;
   }
 
   .common--mountain-background::before {
-    display: block;
-    position: absolute;
-    min-height: 20px;
-    background-image: url("../img/bg-triangle.svg");
-    background-color: red;
-    content: "";
+    height: 81px;
+    width: 100%;
+    bottom: -1px;
+    background: url(../img/bg-intro-triangle-tablet.svg) no-repeat center/cover;
   }
 }
 
-.show-content {
-  display: block;
+
+@media (min-width: 1150px) {
+
 }
+
+
 
 .visually-hidden {
   position: absolute;
