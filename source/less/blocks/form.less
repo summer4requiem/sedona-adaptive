@@ -68,18 +68,14 @@
     color: #000;
 }
 
-.feedback__input {
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-.feedback {
-    margin-bottom: 74px;
-}
 
 @media (min-width: 768px) {
     .review__img {
         min-height: 282px;
+    }
+
+    .form__btn {
+        max-width: 354px;
     }
 
     .review__wrapper {
@@ -88,13 +84,19 @@
 
     .form__introduction--inner {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row-reverse;
         margin-bottom: 63px;
     }
+
     .review__title-wrapper {
         margin-bottom: 76px;
     }
+}
 
+@media (min-width: 1230px) {
+    .form__title {
+        font-size: 21px;
+    }
 
 }

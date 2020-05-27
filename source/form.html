@@ -122,48 +122,55 @@
                 </div>
                 <section class="contacts">
                     <div class="contacts__wrapper">
-                    <h3 class="contacts__title common--title">Контактная информация:</h3>
-                    <div class="contacts__cell">
-                        <label class="contacts__info" for="phone">Контактный телефон*:</label>
-                        <input class="contacts__input gray--input" type="tel" id="phone" placeholder="Введите телефон">
+                        <h3 class="contacts__title common--title">Контактная информация:</h3>
+                        <div class="contacts__cell-wrapper">
+                        <div class="contacts__cell">
+                            <label class="contacts__info" for="phone">Контактный телефон*:</label>
+                            <input class="contacts__input gray--input" type="tel" id="phone"
+                                placeholder="Введите телефон">
+                        </div>
+                        <div class="contacts__cell">
+                            <label class="contacts__info" for="mail">Электронная почта*:</label>
+                            <input class="contacts__input gray--input" type="email" placeholder="Введите e-mail"
+                                id="mail">
+                        </div>
                     </div>
-                    <div class="contacts__cell">
-                        <label class="contacts__info" for="mail">Электронная почта*:</label>
-                        <input class="contacts__input gray--input" type="email" placeholder="Введите e-mail" id="mail">
                     </div>
-                </div> 
                 </section>
                 <section class="landmarks">
                     <p class="landmarks__title common--title">посещенные достопримечательности:</p>
                     <div class="landmarks__wrapper">
-                    <div class="landmarks__cell">
-                        <input id="devil-bridge" class="visually-hidden landmarks__checkbox" type="checkbox"
-                            name="bridge">
-                        <label class="landmarks__label" for="devil-bridge">Мост Дьявола</label>
+                        <div class="landmarks__cell">
+                            <input id="devil-bridge" class="visually-hidden landmarks__checkbox" type="checkbox"
+                                name="bridge">
+                            <label class="landmarks__label" for="devil-bridge">Мост Дьявола</label>
+                        </div>
+                        <div class="landmarks__cell">
+                            <input id="mountain-bell" class="visually-hidden landmarks__checkbox" type="checkbox"
+                                name="mountain" value="mountain-bell">
+                            <label class="landmarks__label" for="mountain-bell">Гора-Колокол</label>
+                        </div>
+                        <div class="landmarks__cell">
+                            <input id="slide-park" class="visually-hidden landmarks__checkbox" type="checkbox"
+                                name="park" value="slide-park">
+                            <label class="landmarks__label" for="slide-park">Слайд-парк</label>
+                        </div>
+                        <div class="landmarks__cell">
+                            <input id="red-rock" class="visually-hidden landmarks__checkbox" type="checkbox">
+                            <label class="landmarks__label" for="red-rock">Красные скалы</label>
+                        </div>
                     </div>
-                    <div class="landmarks__cell">
-                        <input id="mountain-bell" class="visually-hidden landmarks__checkbox" type="checkbox"
-                            name="mountain" value="mountain-bell">
-                        <label class="landmarks__label" for="mountain-bell">Гора-Колокол</label>
-                    </div>
-                    <div class="landmarks__cell">
-                        <input id="slide-park" class="visually-hidden landmarks__checkbox" type="checkbox" name="park"
-                            value="slide-park">
-                        <label class="landmarks__label" for="slide-park">Слайд-парк</label>
-                    </div>
-                    <div class="landmarks__cell">
-                        <input id="red-rock" class="visually-hidden landmarks__checkbox" type="checkbox">
-                        <label class="landmarks__label" for="red-rock">Красные скалы</label>
-                    </div>
-                </div>
                 </section>
                 <section class="feedback">
                     <p class="feedback__title common--title">Опишите свои эмоции</p>
                     <textarea class="feedback__input gray--input" id="" cols="30" rows="10"
                         placeholder="Опишите подробно все свои восторги">
             </textarea>
-                    <button class="form__btn main-style-btn" type="submit">Отправить отзыв</button>
-                    <div>* — обязательные поля</div>
+                    <div class="feedback__btn-wrapper">
+                        <button class="form__btn main-style-btn" type="submit">Отправить отзыв</button>
+                        <div>* — обязательные поля</div>
+                    </div>
+
                 </section>
             </div>
         </form>

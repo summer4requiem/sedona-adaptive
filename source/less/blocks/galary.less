@@ -95,6 +95,7 @@
 
     .galary__img {
         min-height: 282px;
+        margin-bottom: 66px;
     }
 
     .galary__img-about {
@@ -131,5 +132,34 @@
         width: 444px;
         margin: 0 auto;
         margin-bottom: 73px;
+    }
+}
+
+@media (min-width: 1230px) {
+    .galary__img {
+        margin-bottom: 70px;
+    }
+
+    .galary__sub-list .galary__item {
+        width: 33.3%;
+        
+    }
+
+    .galary__item-info {
+        padding: 0;
+        position: relative;
+     
+    }
+
+    .galary__img-about {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        color: #ffffff;
+        background: rgba(0,0,0,.3);
+    }
+
+    .galary__sub-list .galary__item:nth-child(2) .galary__img-about {
+        background: rgba(0,0,0,.5);
     }
 }

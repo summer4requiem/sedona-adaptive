@@ -1,5 +1,6 @@
 .welcome {
     line-height: 26px;
+    margin-bottom: 20px;
 }
 
 .welcome__details {
@@ -7,7 +8,7 @@
     font-size: 14px;
     padding: 0 35px;
     margin: 0;
-    margin-bottom: 30px;
+    text-align: center;
 }
 
 .welcome__details::after {
@@ -25,7 +26,23 @@
 }
 
 .welcome__img {
-    margin-bottom: 45px;
+    margin-bottom: 41px;
+    min-height: 386px;
+}
+
+.welcome__inner-details {
+    position: relative;
+}
+
+.welcome__inner-details::after {
+    position: absolute;
+    content: "";
+    height: 37px;
+    width: 100%;
+    background-image: url('../img/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -34px;
 }
 
 .welcome__title {
